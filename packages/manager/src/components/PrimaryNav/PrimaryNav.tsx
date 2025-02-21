@@ -39,6 +39,7 @@ export type NavEntity =
   | 'Databases'
   | 'Domains'
   | 'Firewalls'
+  | 'GlobalBalancers'
   | 'Help & Support'
   | 'Identity & Access'
   | 'Images'
@@ -190,6 +191,10 @@ export const PrimaryNav = (props: PrimaryNavProps) => {
           {
             display: 'NodeBalancers',
             href: '/nodebalancers',
+          },
+          {
+            display: 'GlobalBalancers',
+            href: '/globalbalancers',
           },
           {
             display: 'Domains',

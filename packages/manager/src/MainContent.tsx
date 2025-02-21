@@ -132,6 +132,9 @@ const Profile = React.lazy(() =>
 const NodeBalancers = React.lazy(
   () => import('src/features/NodeBalancers/NodeBalancers')
 );
+const GlobalBalancers = React.lazy(
+  () => import('src/features/GlobalBalancers/GlobalBalancers')
+);
 const StackScripts = React.lazy(
   () => import('src/features/StackScripts/StackScripts')
 );
@@ -365,6 +368,10 @@ export const MainContent = () => {
                             <Route
                               component={NodeBalancers}
                               path="/nodebalancers"
+                            />
+                            <Route
+                              component={GlobalBalancers}
+                              path="/globalbalancers"
                             />
                             <Route component={Managed} path="/managed" />
                             <Route
