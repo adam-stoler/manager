@@ -6,7 +6,7 @@ import { TableRow } from 'src/components/TableRow';
 import { StatusIcon } from 'src/components/StatusIcon/StatusIcon';
 import { DateTimeDisplay } from 'src/components/DateTimeDisplay';
 
-import { NodeBalancerActionMenu } from '../../NodeBalancers/NodeBalancersLanding/NodeBalancerActionMenu';
+import { GlobalBalancerActionMenu } from './GlobalBalancerActionMenu';
 
 import type { NodeBalancer } from '@linode/api-v4/lib/nodebalancers';
 
@@ -35,7 +35,7 @@ export const GlobalBalancerTableRow = (props: Props) => {
         2025-02-27 15:48
       </TableCell>
       <TableCell actionCell>
-        <NodeBalancerActionMenu
+        <GlobalBalancerActionMenu
           label={label}
           nodeBalancerId={id}
           toggleDialog={onDelete}

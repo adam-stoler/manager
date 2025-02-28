@@ -12,7 +12,7 @@ const GlobalBalancerDetail = React.lazy(() =>
 const GlobalBalancersLanding = React.lazy(
   () => import('./GlobalBalancersLanding/GlobalBalancersLanding')
 );
-const GlobalBalancerCreate = React.lazy(() => import('../NodeBalancers/NodeBalancerCreate'));
+const GlobalBalancerCreate = React.lazy(() => import('./GlobalBalancerCreate'));
 
 const GlobalBalancers = () => {
   return (
